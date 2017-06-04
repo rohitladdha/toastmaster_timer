@@ -1,0 +1,26 @@
+#timer {
+  font-size: -webkit-xxx-large;
+}
+
+#leftcolumn, #rightcolumn {
+    border: 1px solid white;
+    float: left;
+}
+
+#leftcolumn {
+     width: 80%;
+     height: 100vh;
+     background-color: black;
+}
+
+#rightcolumn {
+  display: inline-block;
+  text-align: center;
+  padding-top: 5%;
+  padding-left: 1%;
+  position: absolute;
+}
+
+body {
+  margin: 0;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="simple.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- <div id="wrapper"> -->
+    <div id="leftcolumn">
+    </div>
+    <div id="rightcolumn">
+      <h1 id="timer">00:00</h1>
+      <img id="playPause" src="./images/play.png" alt="play" style="width:50px;height:50px;" onclick="change_play_pause_image()">
+      <img id="reset" src="./images/stop.png" alt="stop" style="width:50px;height:50px;" onclick="reset_counter()">
+      <br/><br/><br/>
+      <table id="colour_coding" style="width:100%">
+        <tr class="colour_coding_row">
+          <th></th>
+          <th>Minute</th> 
+          <th>Seconds</th>
+        </tr>
+        <tr class="colour_coding_row">
+          <td>Green:</td>
+          <td><input type="number" id="green_time_min" min="0" max="60" step="1"/></td> 
+          <td><input type="number" id="green_time_sec" min="0" max="60" step="1"/></td>
+        </tr>
+        <tr class="colour_coding_row">
+          <td>Yellow:</td>
+          <td><input type="number" id="yellow_time_min" min="0" max="60" step="1"/></td> 
+          <td><input type="number" id="yellow_time_sec" min="0" max="60" step="1"/></td>
+        </tr>
+        <tr class="colour_coding_row">
+          <td>Red:</td>
+          <td><input type="number" id="red_time_min" min="0" max="60" step="1"/></td> 
+          <td><input type="number" id="red_time_sec" min="0" max="60" step="1"/></td>
+        </tr>
+      </table>
+    </div>
+<!-- </div> -->
+</body>
+</html>
