@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="simple.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/script.js"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- <div id="wrapper"> -->
-    <div id="leftcolumn">
+    <div id="leftcolumn" tabindex="0">
     </div>
     <div id="rightcolumn">
       <h1 id="timer">00:00</h1>
-      <img id="playPause" src="./images/play.png" alt="play" style="width:50px;height:50px;" onclick="change_play_pause_image()">
-      <img id="reset" src="./images/stop.png" alt="stop" style="width:50px;height:50px;" onclick="reset_counter()">
+      <img id="playPause" src="./images/play.png" alt="play" onclick="change_play_pause_image()">
+      <img id="reset" src="./images/stop.png" alt="stop" onclick="reset_counter()">
       <br/><br/><br/>
-      <table id="colour_coding" style="width:100%">
+      <table id="colour_coding" style="width:50px">
         <tr class="colour_coding_row">
           <th></th>
           <th>Minute</th> 
@@ -35,7 +36,25 @@
           <td><input type="number" id="red_time_sec" min="0" max="60" step="1"/></td>
         </tr>
       </table>
+
+      <br/>
+      <h3>Candidates</h3>
+      <table id="candidates">
+        <tr id="c0">
+          <th></th>
+          <th>No</th> 
+          <th>Name</th> 
+          <th>Time</th>
+        </tr>
+        <tr id="c1">
+          <td><input type='radio' class='radio_class'/></td>
+          <td>1</td>
+          <td><input type='text' class='candidate_name'/></td>
+          <td><input type='text' class='candidate_time'/></td>
+        </tr>
+      </table>
+      <button id="add_button" onclick="add_candidate()">Add</button>
     </div>
-<!-- </div> -->
 </body>
+
 </html>
